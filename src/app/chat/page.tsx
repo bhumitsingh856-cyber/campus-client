@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { ArrowLeft, Send, Sparkles, Loader2 } from "lucide-react";
-import Link from "next/link"; 
+import Link from "next/link";
 import EnhancedMarkdownRenderer from "@/components/Markdown";
 const LOGO = "/image.png";
 
@@ -47,7 +47,10 @@ export default function ChatPage() {
             localStorage.setItem("ips_thread_id", newId);
             setThread(newId)
         }
-        setThread(id)
+        else {
+
+            setThread(id)
+        }
 
     }, [])
     const start_message = `### Welcome to the *IPS Campus Assistant*! 🤖

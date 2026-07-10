@@ -30,12 +30,12 @@ export default function AdminLogin() {
   }
 
   return (
-    <div className="flex min-h-screen items-center justify-center bg-[var(--gradient-subtle)] px-4 font-sans">
-      <div className="w-full max-w-md">
+    <div className="flex min-h-screen items-center justify-center bg-[url(https://content3.jdmagicbox.com/comp/indore/r8/0731px731.x731.110210170622.k2r8/catalogue/ips-academy-rajendra-nagar-indore-institutes-for-bca-rvhimthj84.jpg)] bg-cover px-4 font-sans">
+      <div className="w-full max-w-md ">
         <Link href="/" className="mb-6 inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground">
           <ArrowLeft className="h-4 w-4" /> Back to site
         </Link>
-        <div className="rounded-2xl border border-border bg-card p-8 shadow-[var(--shadow-elegant)]">
+        <div className="rounded-2xl border border-border backdrop-blur-xl p-8 shadow-[var(--shadow-elegant)]">
           <div className="flex items-center gap-3">
             <div className="grid h-11 w-11 place-items-center rounded-xl bg-primary/10 text-primary">
               <ShieldCheck className="h-5 w-5" />

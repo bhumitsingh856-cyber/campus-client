@@ -23,6 +23,7 @@
 // import { useRouter } from "next/navigation";
 
 
+
 // const LOGO = "image.png";
 
 // type UserRow = { id: string; name: string; role: string; channel: "Web" | "Telegram" | "WhatsApp"; msgs: number; last: string };
@@ -79,7 +80,11 @@
 //     { tool: "brochure", n: 98 },
 // ];
 
-// export default function AdminDashboard() {
+export default function AdminDashboard() {
+    return(
+        <div>Soon</div>
+    )
+}
 //     const navigate = useRouter();
 //     const [ready, setReady] = useState(false);
 //     const [pdfs, setPdfs] = useState<[]>([]);

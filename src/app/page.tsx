@@ -18,18 +18,19 @@ const features = [
 ];
 
 const tools = [
-  "get_attendance", "get_syllabus", "scrape_url", "parse_pdf",
-  "examination_schedules", "academic_programs", "admission_procedure",
-  "institute_brochure", "code_of_conduct", "rules_regulations",
-  "get_department_schedules", "get_campus_updates", "placements",
-  "scholarship_notices", "campus_facilities",
+  "Attendance", "Syllabus", "Scrape URL", "Parse PDF",
+  "Examination Schedules", "Academic Programs", "Admission Procedure",
+  "Institute Brochure", "Code of Conduct", "Rules and Regulations",
+  "Department Schedules", "Campus Updates", "Placements",
+  "Scholarship Notices", "Campus Facilities",
 ];
 
-const testimonials = [
-  { name: "Aarav Sharma", role: "B.Tech CSE, Sem 5", quote: "Checking attendance and exam dates used to eat my morning. Now it's a 2-second question.", stars: 5 },
-  { name: "Dr. R. Patel", role: "Faculty, IT Dept", quote: "Students get instant answers, so my inbox is finally sane. The syllabus lookups are spot on.", stars: 5 },
-  { name: "Rohan Mehta", role: "Prospective student", quote: "Asked about admissions at 11pm and got the whole procedure with the brochure. Actually helpful.", stars: 5 },
-];
+// const testimonials = [
+//   { name: "Aarav Sharma", role: "B.Tech CSE, Sem 5", quote: "Checking attendance and exam dates used to eat my morning. Now it's a 2-second question.", stars: 5 },
+//   { name: "Dr. R. Patel", role: "Faculty, IT Dept", quote: "Students get instant answers, so my inbox is finally sane. The syllabus lookups are spot on.", stars: 5 },
+//   { name: "Rohan Mehta", role: "Prospective student", quote: "Asked about admissions at 11pm and got the whole procedure with the brochure. Actually helpful.", stars: 5 },
+// ];
+const testimonials:any = [];
 
 export default function Index() {
   return (
@@ -39,12 +40,12 @@ export default function Index() {
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6">
           <Link href="/" className="flex items-center gap-2">
             <img src={LOGO} alt="IPS" className="h-9 w-9 rounded-full ring-2 ring-primary/10" />
-            <span className="font-display text-lg font-bold tracking-tight">IPS Assistant</span>
+            <span className="font-display text-lg font-bold tracking-tight">Campus Assistant</span>
           </Link>
           <nav className="hidden items-center gap-8 text-sm font-medium text-muted-foreground md:flex">
             <a href="#features" className="hover:text-foreground">Features</a>
             <a href="#channels" className="hover:text-foreground">Channels</a>
-            <Link href="/admin/login" className="hover:text-foreground">Admin</Link>
+            {/* <Link href="/admin/login" className="hover:text-foreground">Admin</Link> */}
           </nav>
           <Link href="/chat">
             <Button size="sm" className="gap-1.5">
@@ -92,7 +93,7 @@ export default function Index() {
               </a>
             </div>
             <div className="mt-10 flex items-center gap-6 text-sm text-muted-foreground">
-              <div><span className="font-semibold text-foreground">12k+</span> queries answered</div>
+              <div><span className="font-semibold text-foreground">Fast</span> </div>
               <div className="h-4 w-px bg-border" />
               <div><span className="font-semibold text-foreground">16</span> knowledge tools</div>
               <div className="h-4 w-px bg-border" />
@@ -118,7 +119,7 @@ export default function Index() {
                   <Bot className="h-3.5 w-3.5 text-primary" /> Ask anything
                 </div>
                 <div className="absolute -right-6 top-1/3 hidden animate-[float_7s_ease-in-out_infinite_1s] items-center gap-2 rounded-full border border-border bg-card px-3 py-1.5 text-xs font-medium shadow-[var(--shadow-soft)] sm:flex">
-                  <Zap className="h-3.5 w-3.5 text-[oklch(0.7_0.17_75)]" /> 1.4s replies
+                  <Zap className="h-3.5 w-3.5 text-[oklch(0.7_0.17_75)]" /> 24x7
                 </div>
                 <div className="absolute -bottom-2 left-8 hidden animate-[float_8s_ease-in-out_infinite_0.5s] items-center gap-2 rounded-full border border-border bg-card px-3 py-1.5 text-xs font-medium shadow-[var(--shadow-soft)] sm:flex">
                   <FileSearch className="h-3.5 w-3.5 text-[oklch(0.6_0.15_150)]" /> RAG over PDFs
@@ -197,7 +198,7 @@ export default function Index() {
             <div className="flex items-center gap-3 border-b border-border pb-4">
               <img src={LOGO} className="h-10 w-10 rounded-full" alt="" />
               <div>
-                <div className="font-semibold">IPS Assistant</div>
+                <div className="font-semibold">IPS Campus Assistant</div>
                 <div className="text-xs text-muted-foreground">online · replies instantly</div>
               </div>
             </div>
@@ -249,7 +250,7 @@ export default function Index() {
             <p className="mt-4 text-muted-foreground">Students, faculty and visitors — one assistant, everyone happy.</p>
           </div>
           <div className="mt-14 grid grid-cols-1 gap-6 md:grid-cols-3">
-            {testimonials.map((t) => (
+            {testimonials.map((t:any) => (
               <figure key={t.name} className="relative rounded-2xl border border-border/70 bg-card p-7 shadow-[var(--shadow-soft)]">
                 <Quote className="absolute right-5 top-5 h-6 w-6 text-primary/15" />
                 <div className="flex gap-0.5 text-[oklch(0.75_0.16_75)]">
